@@ -1,0 +1,6 @@
+@FirstASPDotNetCoreWebAPIProject_HostAddress = http://localhost:5078
+
+GET {{FirstASPDotNetCoreWebAPIProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
