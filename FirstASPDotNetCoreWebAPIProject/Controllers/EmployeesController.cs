@@ -2,10 +2,12 @@
 using FirstASPDotNetCoreWebAPIProject.Models;
 using Microsoft.AspNetCore.Mvc;
 using FirstASPDotNetCoreWebAPIProject.Helpers;
+using Microsoft.AspNetCore.Authorization;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace FirstASPDotNetCoreWebAPIProject.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeesController : ControllerBase

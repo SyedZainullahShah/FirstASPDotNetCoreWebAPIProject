@@ -13,6 +13,8 @@ namespace FirstASPDotNetCoreWebAPIProject.Profiles
 
             CreateMap<CreateOrUpdateProductDTO, Product>();
 
+            CreateMap<CreateUpdateCategoryDTO, Category>();
+
         }
     }
 }

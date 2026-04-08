@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FirstASPDotNetCoreWebAPIProject.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
@@ -25,7 +26,6 @@ namespace FirstASPDotNetCoreWebAPIProject.Controllers
         }
         // GET: api/<ProductsController>
         [HttpGet]
-        [Authorize]
         public IActionResult Get()
         {
             //List<Product>? products = _context.Products.Include(p=>p.Category).ToList();
